@@ -46,15 +46,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: [
-          !isProduction && {
-            loader: 'babel-loader',
-            // options: {
-            //   plugins: ['styled-components'],
-            // },
-          },
-          'ts-loader',
-        ].filter(Boolean),
+        use: 'babel-loader',
       },
     ],
   },
