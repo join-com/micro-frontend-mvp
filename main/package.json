@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "prettier": "prettier --write \"src/**/*.{ts,tsx,css}\""
   },
   "license": "MIT",
@@ -33,7 +33,9 @@
   },
   "dependencies": {
     "eev": "0.1.5",
+    "express": "4.16.4",
     "next": "7.0.2",
+    "next-routes": "1.4.2",
     "react": "16.7.0-alpha.0",
     "react-dom": "16.7.0-alpha.0",
     "react-no-ssr": "1.1.0",

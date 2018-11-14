@@ -20,8 +20,4 @@ const CartContainer = connect(mapStateToPros)(({ cart }: any) => {
   )
 })
 
-const Cart = () => {
-  return <CartContainer />
-}
-
-export default Cart
+export default CartContainer
